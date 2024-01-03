@@ -1034,15 +1034,15 @@ main {
   #BLOG
 \*-----------------------------------*/
 
-.Achievements-posts { margin-bottom: 10px; }
+.blog-posts { margin-bottom: 10px; }
 
-.Achievements-posts-list {
+.blog-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.Achievements-post-item > a {
+.blog-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1051,7 +1051,7 @@ main {
   z-index: 1;
 }
 
-.Achievements-post-item > a::before {
+.blog-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1060,25 +1060,25 @@ main {
   z-index: -1;
 }
 
-.Achievements-banner-box {
+.blog-banner-box {
   width: 100%;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.Achievements-banner-box img {
+.blog-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.Achievements-post-item > a:hover .Achievements-banner-box img { transform: scale(1.1); }
+.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
 
-.Achievements-content { padding: 15px; }
+.blog-content { padding: 15px; }
 
-.Achievements-meta {
+.blog-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1086,28 +1086,28 @@ main {
   margin-bottom: 10px;
 }
 
-.Achievements-meta :is(.Achievements-category, time) {
+.blog-meta :is(.blog-category, time) {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.Achievements-meta .dot {
+.blog-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
 }
 
-.Achievements-item-title {
+.blog-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
 
-.Achievements-post-item > a:hover .Achievements-item-title { color: var(--orange-yellow-crayola); }
+.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
 
-.Achievements-text {
+.blog-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
